@@ -95,16 +95,16 @@ analytics:
 author:
   name             : "Jungwon Park"
   avatar           : "/assets/images/thumbnail.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "M.S. student in LARR, Seoul National Univ."
+  bio              : "M.S. student in LARR, SNU"
   location         : "Seoul, South Korea"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:wjstk335@gmail.com"
-    - label: "Website"
+    - label: "LARR"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://larr.snu.ac.kr/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
