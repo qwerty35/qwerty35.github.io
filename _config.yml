@@ -137,8 +137,8 @@ footer:
       icon: "fab fa-fw fa-bitbucket"
       # url:
     - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/channel/UCwvR5sJwWNaprtagC9SXS6Q"
 
 
 # Reading Files
