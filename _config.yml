@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Jungwon Park"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/thumbnail.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "M.S. student in LARR, Seoul National Univ."
   location         : "Seoul, South Korea"
   email            :
