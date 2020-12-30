@@ -31,9 +31,9 @@ Education
 
 Areas of Interest
 -----------------
-   - Path planning for multiple robots
-   - Collision avoidance
-   - Quadrotor swarm
+   - Path Planning for Multiple Robots
+   - Collision Avoidance
+   - Distributed Robot Systems
 
 Journals
 --------
