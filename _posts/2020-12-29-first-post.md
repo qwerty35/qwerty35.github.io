@@ -37,7 +37,7 @@ Areas of Interest
 
 Journals
 --------
-   - Jungwon Park and H. Jin Kim*, “Online Trajectory Planning for Multiple Quadrotors in Dynamic Environments using Relative Safe Flight Corridor,” IEEE Robotics and Automation Letters, 2020. (Accepted)
+   - Jungwon Park and H. Jin Kim*, “Online Trajectory Planning for Multiple Quadrotors in Dynamic Environments using Relative Safe Flight Corridor,” IEEE Robotics and Automation Letters, 2020. [[pdf]](https://ieeexplore.ieee.org/document/9310337) [[video]](https://www.youtube.com/watch?v=M_9349HFqww&ab_channel=JungwonPark)
 
 
 Conferences
