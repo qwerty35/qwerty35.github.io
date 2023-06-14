@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Jungwon Park's homepage"
+title                    : "Jungwon Park"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "Toward Multi-Robot System"# site tagline that appears below site title in masthead
 name                     : "Jungwon Park"
-description              : "Multi-Agent Trajectory Planning"
+description              : "Jungwon Park's homepage"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -95,8 +95,8 @@ analytics:
 author:
   name             : "Jungwon Park"
   avatar           : "/assets/images/thumbnail.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Ph.D. Candidate in Seoul National Univ."
-  location         : "Seoul, South Korea"
+  bio              : "Ph.D. Candidate / Aerospace Engineering / Seoul National Univ."
+  location         : #"Seoul, South Korea"
   email            :
   links:
     - label: "CV"
