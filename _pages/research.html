@@ -1,0 +1,15 @@
+---
+layout: archive 
+author_profile: true
+header:
+  overlay_image: assets/image/header/lab_panorama.jpg
+  overlay_filter: 0.5
+excerpt: "Research"
+
+---
+
+<h3 class="archive__subtitle">Publications</h3>
+
+{% for post in site.categories.Research %}
+	{% include archive-single.html type='post' %}
+{% endfor %}
