@@ -65,9 +65,10 @@ Will output the following:
 {% include figure image_path="/assets/images/unsplash-image-10.jpg" alt="this is a placeholder image" caption="This is a figure caption." %}
 
 ```html
+
 <figure>
-  <img src="/assets/images/unsplash-image-10.jpg" alt="this is a placeholder image">
-  <figcaption>This is a figure caption.</figcaption>
+    <img src="/assets/image/unsplash-image-10.jpg" alt="this is a placeholder image">
+    <figcaption>This is a figure caption.</figcaption>
 </figure>
 ```
 

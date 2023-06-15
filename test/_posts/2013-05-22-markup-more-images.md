@@ -27,9 +27,10 @@ Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater u
 Apply the `half` class like so to display two images side by side that share the same caption.
 
 ```html
+
 <figure class="half">
     <a href="/assets/images/image-filename-1-large.jpg"><img src="/assets/images/image-filename-1.jpg"></a>
-    <a href="/assets/images/image-filename-2-large.jpg"><img src="/assets/images/image-filename-2.jpg"></a>
+    <a href="/assets/image/image-filename-2-large.jpg"><img src="/assets/image/image-filename-2.jpg"></a>
     <figcaption>Caption describing these two images.</figcaption>
 </figure>
 ```

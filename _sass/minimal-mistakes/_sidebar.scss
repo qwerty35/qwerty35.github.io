@@ -320,6 +320,7 @@
 
     &:hover {
       text-decoration: underline;
+      text-decoration-color: $link-color-hover;
     }
   }
 }

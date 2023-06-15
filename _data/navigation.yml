@@ -2,8 +2,6 @@
 main:
   - title: "Research"
     url: /_pages/research/index.html
-  - title: "Archive"
-    url: /year-archive/
   - title: "Category"
     url: /categories/
   - title: "Tag"

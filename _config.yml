@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "Jungwon Park"
 title_separator          : "-"
-subtitle                 : "Toward Multi-Robot System"# site tagline that appears below site title in masthead
+subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Jungwon Park"
 description              : "Jungwon Park's homepage"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -85,21 +85,21 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : google-gtag # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
+    tracking_id          : G-7M7NWENRLH
     anonymize_ip         : # true, false (default)
 
 
 # Site Author
 author:
   name             : "Jungwon Park"
-  avatar           : "/assets/images/thumbnail.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/image/thumbnail/thumbnail.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Ph.D. Candidate / Aerospace Engineering / Seoul National Univ."
   location         : #"Seoul, South Korea"
   email            :
   links:
-    - label: "CV"
+    - label: "Curriculum Vitae (CV)"
       icon: "fas fa-fw fa-file-pdf"
       url: "/assets/download/jungwonpark_cv.pdf"
     - label: "Twitter"
@@ -125,24 +125,15 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/qwerty35"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
     - label: "Youtube"
       icon: "fab fa-fw fa-youtube"
       url: "https://www.youtube.com/channel/UCwvR5sJwWNaprtagC9SXS6Q"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/jungwon-park-a79977260"
 
 
 # Reading Files

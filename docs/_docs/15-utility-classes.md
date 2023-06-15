@@ -92,7 +92,7 @@ The image above happens to be **centered**.
 And now we're going to shift things to the **right align**. Again, there should be plenty of room above, below, and to the left of the image. Just look at him there --- Hey guy! Way to rock that right side. I don't care what the left aligned image says, you look great. Don't let anyone else tell you differently.
 
 ```markdown
-![image-right](/assets/images/filename.jpg){: .align-right}
+![image-right](/assets/image/filename.jpg){: .align-right}
 ```
 
 ---

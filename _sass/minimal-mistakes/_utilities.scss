@@ -531,12 +531,18 @@ body:hover .visually-hidden button {
   }
 }
 
+a {
+  text-decoration: none;
+  text-decoration-color: $link-color;
+}
+
 a.reversefootnote {
   color: $gray;
   text-decoration: none;
 
   &:hover {
     text-decoration: underline;
+    text-decoration-color: $link-color-hover;
   }
 }
 

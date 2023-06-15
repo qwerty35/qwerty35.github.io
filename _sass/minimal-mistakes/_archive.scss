@@ -6,6 +6,10 @@
   margin-top: 1em;
   margin-bottom: 2em;
 
+  h2:first-of-type {
+    margin-top: 0;
+  }
+
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
@@ -20,6 +24,8 @@
 
 .archive__item {
   position: relative;
+  display: block;
+  margin-bottom: 2em;
 
   a {
     position: relative;
@@ -95,6 +101,31 @@
   }
 }
 
+.archive__item-teaser-link {
+  position: absolute;
+  border: 2px white solid;
+  border-radius: $border-radius;
+  padding: .2em;
+  margin: 0;
+  width: 8em;
+  text-align: center;
+  opacity: 0;
+  transition: $global-transition;
+
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  color: white;
+  font-weight: bold;
+  //& > p {
+  //  color: white;
+  //  font-weight: bold;
+  //  margin: 0;
+  //  padding: 0;
+  //}
+}
+
 .archive__item-caption {
   position: absolute;
   bottom: 0;
@@ -120,11 +151,73 @@
   }
 }
 
+.archive__item-teaser_leftOfText {
+  @extend .archive__item-teaser;
+  float: left;
+  border-radius: $border-radius;
+  overflow: hidden;
+  -webkit-transition: $global-transition;
+  transition: $global-transition;
+
+  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 14px;
+  width: 150px;
+
+  @include breakpoint($medium) {
+    width: 180px;
+  }
+
+  @include breakpoint($large) {
+    width: 200px;
+  }
+
+  @include breakpoint($x-large) {
+    width: 200px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+  }
+}
+
+.archive__item:hover {
+  .archive__item-teaser {
+    box-shadow: 0 0 10px rgba(#000, 0.25);
+  }
+
+  .archive__item-teaser_leftOfText {
+    box-shadow: 0 0 10px rgba(#000, 0.25);
+  }
+
+  .archive__item-teaser-link {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+.feature__item > .archive__item:hover {
+  .archive__item-teaser > img {
+    filter: brightness(50%);
+  }
+}
+
 /*
    List view
    ========================================================================== */
 
 .list__item {
+  .page__meta {
+    margin: 0 0 4px;
+    font-size: 0.6em;
+  }
+}
+
+.post__item {
   .page__meta {
     margin: 0 0 4px;
     font-size: 0.6em;
@@ -280,6 +373,8 @@
   }
 
   .archive__item-body {
+    color: black;
+    text-decoration-color: black;
     padding-left: gutter(1 of 12);
     padding-right: gutter(1 of 12);
   }
@@ -426,7 +521,7 @@
   .feature__wrapper {
     .archive__item-title {
       margin-top: 0.25em;
-      font-size: 1em;
+      font-size: $type-size-5;
     }
   }
 
@@ -434,7 +529,7 @@
   .feature__item--left,
   .feature__item--center,
   .feature__item--right {
-    font-size: 1em;
+    font-size: $type-size-5;
   }
 }
 
