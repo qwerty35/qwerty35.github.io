@@ -3,19 +3,24 @@
    ========================================================================== */
 
 .masthead {
-  position: relative;
+  position: sticky;
+  top: -0.5em;
   border-bottom: 1px solid $border-color;
+  background-color: $background-color;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
-  z-index: 20;
+  z-index: 100;
+  font-size: $h-size-3;
+  margin: 0 -1em;
+  padding: 0 1em;
 
   &__inner-wrap {
     @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    padding: 1em;
+    padding: 1em 0em .5em 0em;
     max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;

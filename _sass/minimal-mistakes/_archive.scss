@@ -6,7 +6,11 @@
   margin-top: 1em;
   margin-bottom: 2em;
 
-  h2:first-of-type {
+  & > p {
+    font-size: $type-size-5;
+  }
+
+  h2:first-child, h3:first-child {
     margin-top: 0;
   }
 
@@ -25,7 +29,8 @@
 .archive__item {
   position: relative;
   display: block;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  overflow: hidden;
 
   a {
     position: relative;
@@ -39,17 +44,22 @@
 
 .archive__subtitle {
   margin: 1.414em 0 0.5em;
-  padding-bottom: 0.5em;
-  font-size: $type-size-5;
+  // padding-bottom: 0.5em;
+  font-size: $type-size-4;
   color: $muted-text-color;
   border-bottom: 1px solid $border-color;
 
   + .list__item .archive__item-title {
     margin-top: 0.5em;
   }
+
+  @media screen and (max-width: $small) {
+    border: 0;
+  }
 }
 
 .archive__item-title {
+  margin-top: .25em;
   margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
   line-height: initial;
@@ -103,7 +113,7 @@
 
 .archive__item-teaser-link {
   position: absolute;
-  border: 2px white solid;
+  border: 1px white solid;
   border-radius: $border-radius;
   padding: .2em;
   margin: 0;
@@ -118,12 +128,6 @@
 
   color: white;
   font-weight: bold;
-  //& > p {
-  //  color: white;
-  //  font-weight: bold;
-  //  margin: 0;
-  //  padding: 0;
-  //}
 }
 
 .archive__item-caption {
@@ -206,6 +210,16 @@
   }
 }
 
+.entries-list {
+  @media screen and (max-width: $small) {
+    border-left: 1px solid $gray;
+  }
+}
+
+#recent-posts {
+  border: none;
+}
+
 /*
    List view
    ========================================================================== */
@@ -213,17 +227,66 @@
 .list__item {
   .page__meta {
     margin: 0 0 4px;
-    font-size: 0.6em;
+    font-size: $type-size-7;
+  }
+  @media screen and (max-width: $small) {
+    padding: 1em 1em;
+    &:last-child {
+      border-bottom: none;
+    }
+    border-bottom: 1px solid $border-color;
+    .archive__item {
+      margin: 0;
+    }
+    .archive__item-excerpt {
+      display: none;
+    }
+    &:hover {
+      background-color: whitesmoke;
+      box-shadow: inset 0 0 10vw rgba(#000, 0.01);
+    }
   }
 }
+
+/*
+   List view
+   ========================================================================== */
 
 .post__item {
+  display: block;
+  transition: $global-transition;
   .page__meta {
     margin: 0 0 4px;
-    font-size: 0.6em;
+    font-size: $type-size-7;
+  }
+
+  background-color: #fff;
+  @media screen and (max-width: $small) {
+    padding: 1em 1em;
+    &:last-child {
+      border-bottom: none;
+    }
+    border-bottom: 1px solid $border-color;
+    .archive__item {
+      margin: 0;
+    }
+    .archive__item-excerpt {
+      display: none;
+    }
+    .archive__item-teaser_leftOfText {
+      display: none;
+      position: absolute;
+    }
+    &:hover {
+      background-color: whitesmoke;
+      box-shadow: inset 0 0 10vw rgba(#000, 0.01);
+    }
   }
 }
 
+.clear {
+  clear: both;
+}
 /*
    Grid view
    ========================================================================== */
@@ -291,7 +354,7 @@
 
   .page__meta {
     margin: 0 0 4px;
-    font-size: 0.6em;
+    font-size: $type-size-7;
   }
 
   .page__meta-sep {
@@ -304,7 +367,7 @@
 
   .archive__item-title {
     margin-top: 0.5em;
-    font-size: $type-size-5;
+    // font-size: $type-size-5;
   }
 
   .archive__item-excerpt {
@@ -333,11 +396,15 @@
 
 .feature__wrapper {
   @include clearfix();
-  margin-bottom: 2em;
-  border-bottom: 1px solid $border-color;
+  // margin-bottom: 2em;
+  // border-bottom: 1px solid $border-color;
 
   .archive__item-title {
     margin-bottom: 0;
+  }
+
+  @media screen and (max-width: $small) {
+    margin: 0;
   }
 }
 
@@ -373,10 +440,14 @@
   }
 
   .archive__item-body {
-    color: black;
-    text-decoration-color: black;
     padding-left: gutter(1 of 12);
     padding-right: gutter(1 of 12);
+    color: black;
+    text-decoration-color: black;
+
+    .archive__item-excerpt > p {
+      text-align: left;
+    }
   }
 
   a.btn::before {
@@ -521,23 +592,23 @@
   .feature__wrapper {
     .archive__item-title {
       margin-top: 0.25em;
-      font-size: $type-size-5;
+      // font-size: $type-size-5;
     }
   }
 
-  .feature__item,
-  .feature__item--left,
-  .feature__item--center,
-  .feature__item--right {
-    font-size: $type-size-5;
-  }
+  // .feature__item,
+  // .feature__item--left,
+  // .feature__item--center,
+  // .feature__item--right {
+  //   font-size: $type-size-5;
+  // }
 }
 
 /*
    Wide Pages
    ========================================================================== */
 
-  .wide {
+.wide {
   .archive {
     @include breakpoint($large) {
       padding-right: 0;
@@ -552,7 +623,7 @@
 /* Place inside a single layout */
 
 .layout--single {
-	.feature__wrapper {
-		display: inline-block;
-	}
+  .feature__wrapper {
+    display: inline-block;
+  }
 }
